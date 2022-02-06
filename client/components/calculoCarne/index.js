@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from "react";
-import {
-  SafeAreaView,
-  StyleSheet,
-  TextInput,
-  View,
-  CheckBox,
-  Text,
-} from "react-native";
+import { SafeAreaView, TextInput, View, CheckBox, Text } from "react-native";
+import { styles } from "../../assets/css/Css.js";
 
 export default function CalculoCarne() {
   const [homens, setHomens] = useState(0);
@@ -82,27 +76,3 @@ export default function CalculoCarne() {
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  input: {
-    height: 40,
-    margin: 6,
-    borderWidth: 1,
-    padding: 10,
-  },
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  checkboxContainer: {
-    flexDirection: "row",
-    marginBottom: 20,
-  },
-  checkbox: {
-    alignSelf: "center",
-  },
-  label: {
-    margin: 8,
-  },
-});
